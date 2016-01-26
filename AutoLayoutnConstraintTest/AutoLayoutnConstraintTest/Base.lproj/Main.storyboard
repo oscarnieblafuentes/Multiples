@@ -23,6 +23,10 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="D7N-wV-uno">
+                                <rect key="frame" x="180" y="176" width="240" height="128"/>
+                                <color key="backgroundColor" red="0.73282068060000005" green="0.054211174469999998" blue="0.064499210429999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
