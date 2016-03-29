@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,7 +18,41 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PFG-4d-1k1">
+                                <rect key="frame" x="20" y="20" width="565" height="144"/>
+                                <color key="backgroundColor" red="0.30438612609999999" green="1" blue="0.64571790929999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="5Na-LF-wYF"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ca-9K-NVC">
+                                <rect key="frame" x="20" y="452" width="128" height="128"/>
+                                <color key="backgroundColor" red="0.73282068060000005" green="0.054211174469999998" blue="0.064499210429999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="WlB-s8-TXc"/>
+                                    <constraint firstAttribute="width" secondItem="4ca-9K-NVC" secondAttribute="height" multiplier="1:1" id="yFS-ZK-lKP"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q3V-Q1-xcb">
+                                <rect key="frame" x="457" y="452" width="128" height="128"/>
+                                <color key="backgroundColor" red="0.94734182560000002" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="Rdc-VP-ZBd"/>
+                                    <constraint firstAttribute="width" constant="128" id="uSd-LL-XPC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="PFG-4d-1k1" secondAttribute="trailing" constant="-5" id="67U-Ug-3wK"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="4ca-9K-NVC" secondAttribute="bottom" constant="20" id="NkA-Jr-Suh"/>
+                            <constraint firstItem="4ca-9K-NVC" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="QAv-yv-OvR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q3V-Q1-xcb" secondAttribute="trailing" constant="-5" id="hU7-Mu-HkY"/>
+                            <constraint firstItem="PFG-4d-1k1" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="jZu-es-WUe"/>
+                            <constraint firstItem="PFG-4d-1k1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="kFv-pK-T9B"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="Q3V-Q1-xcb" secondAttribute="bottom" constant="20" id="x9E-tP-4qG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>

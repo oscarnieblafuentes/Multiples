@@ -40,16 +40,25 @@
                                     <constraint firstAttribute="height" constant="128" id="h5i-bp-06X"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="statue" translatesAutoresizingMaskIntoConstraints="NO" id="dBj-SB-COF">
+                                <rect key="frame" x="161" y="115" width="279" height="465"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="279" id="vtQ-Hc-V2P"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dBj-SB-COF" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="95" id="7vL-Uf-NE3"/>
                             <constraint firstItem="o79-ka-om0" firstAttribute="leading" secondItem="5YU-63-AKb" secondAttribute="leading" id="GCQ-ho-9c6"/>
                             <constraint firstItem="TDT-pz-c8L" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="USu-CG-ssf"/>
                             <constraint firstItem="TDT-pz-c8L" firstAttribute="leading" secondItem="o79-ka-om0" secondAttribute="trailing" constant="8" symbolic="YES" id="WeK-6i-gL1"/>
                             <constraint firstItem="5YU-63-AKb" firstAttribute="width" secondItem="o79-ka-om0" secondAttribute="width" multiplier="2" id="all-SL-eiW"/>
+                            <constraint firstItem="dBj-SB-COF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" multiplier="1.5" constant="-10" id="c03-1H-Er2"/>
                             <constraint firstItem="TDT-pz-c8L" firstAttribute="top" secondItem="5YU-63-AKb" secondAttribute="bottom" constant="8" id="ccf-hP-rUw"/>
                             <constraint firstItem="5YU-63-AKb" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="eo7-MY-uB2"/>
                             <constraint firstItem="5YU-63-AKb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ktJ-Ba-sHd"/>
+                            <constraint firstAttribute="bottom" secondItem="dBj-SB-COF" secondAttribute="bottom" constant="20" symbolic="YES" id="nWS-R6-E3Z"/>
                             <constraint firstItem="o79-ka-om0" firstAttribute="top" secondItem="5YU-63-AKb" secondAttribute="bottom" constant="8" id="vH0-Cs-NsT"/>
                             <constraint firstItem="5YU-63-AKb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="zHq-qC-ofg"/>
                         </constraints>
@@ -60,4 +69,7 @@
             <point key="canvasLocation" x="465" y="473"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="statue" width="276" height="750"/>
+    </resources>
 </document>
