@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10089" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10072.1"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,31 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am a label in the right place!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y8H-b0-zOo">
-                                <rect key="frame" x="188" y="44" width="224" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wuR-Yo-6S2">
+                                <rect key="frame" x="20" y="28" width="560" height="172"/>
+                                <color key="backgroundColor" red="0.0" green="0.25" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="224" id="Wel-tI-PDj"/>
-                                    <constraint firstAttribute="height" constant="21" id="ZU0-Xc-Rvv"/>
+                                    <constraint firstAttribute="height" constant="172" id="9bf-Fv-fdo"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bAU-Xf-WFP">
-                                <rect key="frame" x="180" y="248" width="240" height="128"/>
-                                <color key="backgroundColor" red="0.30438612612261018" green="1" blue="0.64571790931944872" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="7DU-fy-855"/>
-                                    <constraint firstAttribute="height" constant="128" id="d6U-uC-VeQ"/>
-                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QLR-Zw-LEy">
+                                <rect key="frame" x="20" y="208" width="265" height="145"/>
+                                <color key="backgroundColor" red="0.73282068060000005" green="0.054211174469999998" blue="0.064499210429999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.87271350250000002" green="0.0099080934229999994" blue="0.2269141174" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJW-QO-Fnx">
+                                <rect key="frame" x="315" y="208" width="265" height="145"/>
+                                <color key="backgroundColor" red="0.30438612609999999" green="1" blue="0.64571790929999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.87271350250000002" green="0.0099080934229999994" blue="0.2269141174" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="y8H-b0-zOo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9rZ-lK-gWa"/>
-                            <constraint firstItem="bAU-Xf-WFP" firstAttribute="centerX" secondItem="y8H-b0-zOo" secondAttribute="centerX" id="bgw-nF-j0w"/>
-                            <constraint firstItem="bAU-Xf-WFP" firstAttribute="top" secondItem="y8H-b0-zOo" secondAttribute="bottom" constant="183" id="g8e-Hh-c9J"/>
-                            <constraint firstItem="y8H-b0-zOo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="24" id="z2h-OX-HvK"/>
+                            <constraint firstItem="QLR-Zw-LEy" firstAttribute="width" secondItem="wuR-Yo-6S2" secondAttribute="width" id="SiT-vV-JaY"/>
+                            <constraint firstItem="wuR-Yo-6S2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ae0-EL-5pV"/>
+                            <constraint firstItem="QLR-Zw-LEy" firstAttribute="leading" secondItem="wuR-Yo-6S2" secondAttribute="leading" id="g2g-GX-tdz"/>
+                            <constraint firstItem="wuR-Yo-6S2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="tca-Fc-pAf"/>
+                            <constraint firstItem="wuR-Yo-6S2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="u7U-iO-hiu"/>
                         </constraints>
                     </view>
                 </viewController>
