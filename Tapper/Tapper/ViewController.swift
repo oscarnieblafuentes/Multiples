@@ -20,6 +20,12 @@ class ViewController: UIViewController {
 
 
     @IBAction func letsPLAY(sender: UIButton) {
+        tLOGO.hidden = true
+        HMtapBTN.hidden = true
+        playmeBTN.hidden = true
+        
+        coinPRESS.hidden = false
+        tapLABL.hidden = false
     }
 
 
