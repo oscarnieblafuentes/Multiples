@@ -9,10 +9,15 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //Properties
+    var maxTaps: Int = 0
+    var currentTaps: Int = 0
+    
     //outlets
     
     @IBOutlet weak var tLOGO: UIImageView!
-    @IBOutlet weak var HMtapBTN: UITextField!
+    @IBOutlet weak var howManyTapsTXT: UITextField!
     @IBOutlet weak var playmeBTN: UIButton!
     
     @IBOutlet weak var coinPRESS: UIButton!
@@ -20,13 +25,26 @@ class ViewController: UIViewController {
 
 
     @IBAction func letsPLAY(sender: UIButton) {
+        
+        
+        if !(howManyTapsTXT.text?.isEmpty)!     {
+        
+        
         tLOGO.hidden = true
-        HMtapBTN.hidden = true
+        howManyTapsTXT.hidden = true
         playmeBTN.hidden = true
         
         coinPRESS.hidden = false
         tapLABL.hidden = false
+         
+            
+            
+           maxTaps = Int(howManyTapsTXT.text!)!
+            currentTaps = 0
+            
+            tapLABL.text = "\(currentTaps) Taps"
+            
     }
-
+    }
 
 }

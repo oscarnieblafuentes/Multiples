@@ -89,8 +89,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="HMtapBTN" destination="8fM-Gf-7bf" id="JpW-gf-FL0"/>
                         <outlet property="coinPRESS" destination="WfY-ek-5dg" id="WjE-yV-VV6"/>
+                        <outlet property="howManyTapsTXT" destination="8fM-Gf-7bf" id="nD0-Nd-G2F"/>
                         <outlet property="playmeBTN" destination="FRX-W8-y4V" id="bfX-fj-0JQ"/>
                         <outlet property="tLOGO" destination="xcy-Pd-Tsp" id="R5C-3u-k4D"/>
                         <outlet property="tapLABL" destination="0dz-RJ-olD" id="ZUC-nx-yUL"/>
