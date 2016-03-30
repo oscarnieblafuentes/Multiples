@@ -10,16 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    
+//Outlets
+    
+    @IBOutlet weak var logo: UIImageView!
+    @IBOutlet weak var multipletxtFIELD: UITextField!
+    @IBOutlet weak var playBTN: UIButton!
+    
+    @IBOutlet weak var pADD: UILabel!
+    @IBOutlet weak var multiplesLBL: UILabel!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    @IBOutlet weak var addBTN: UIButton!
+    
+    @IBAction func pressPlay (sender: UIButton)
+        {
+        logo.hidden = true
+        multipletxtFIELD.hidden = true
+        multiplesLBL.hidden = true
+        playBTN.hidden = true
+        
+        pADD.hidden = false
+        addBTN.hidden = false
+            
+        }
 
 }
 
