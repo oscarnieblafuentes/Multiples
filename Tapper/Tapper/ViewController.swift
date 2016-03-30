@@ -28,6 +28,9 @@ class ViewController: UIViewController {
     @IBAction func coinTAPPED(sender: UIButton) {
         currentTaps += 1
         updateTapsLBL()
+        if isGameOver(){
+            restartGame()
+        }
     }
     
     @IBAction func letsPLAY(sender: UIButton) {
